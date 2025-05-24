@@ -23,6 +23,7 @@ def test(request: Request):
 def health_check():
     return {'status': 'Healthy'}
 
+
 app.include_router(auth.router)
 app.include_router(admin.router)
 app.include_router(users.router)
